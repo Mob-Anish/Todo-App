@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Bangers', cursive, sans-serif;
+    min-height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(120deg, #75ebe1, rgb(35, 39, 167));
+}
+
+header
+{
+    font-size: 1.8rem;
+}
+
+header,form
+{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+form input,form button
+{
+    padding: 0.8rem;
+    font-size: 2.3rem;
+    border: none; 
+    box-shadow: 0 0.2rem 0.5rem #000;
+    outline: none;
+    transition: all .2s ease;
+    border-radius: 0;
+}
+
+
+
+form input:hover
+{
+    transform: scale(1.02);
+}
+
+form button
+{
+    margin-left: 0.5rem;
+    color: rgb(35, 39, 167);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+form button:hover
+{
+    background: rgb(64, 69, 212);
+    color: #fff;
+}
+
+
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list
+{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo
+{
+    margin: 0.8rem;
+    background: #fff;
+    color: #000;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.2rem 0.5rem #000;
+    transition: all .5s ease;
+}
+
+.todo li
+{
+    flex: 1;
+}
+
+.complete-btn,.trash-btn
+{
+    background: rgb(35, 39, 167);
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 1.3rem;
+    border-radius: 0rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: all .3s ease;
+}
+
+.complete-btn:active,.trash-btn:active
+{
+    transform: scale(0.8);
+}
+
+.trash-btn:active
+{
+    background-color: red;
+}
+
+.complete-btn
+{
+    background-color: #75ebe1;
+}
+
+.todo-item
+{
+    padding: 0rem 0.5rem;
+}
+
+
+.fa-trash, .fa-check
+{
+    pointer-events: none;
+}
+
+
+.completed
+{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.fall
+{
+    transform: translateY(10rem);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
